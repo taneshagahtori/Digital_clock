@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("./cute-flower-background-mdushf1od439uabm.jpg");
+    background-size: cover;
+}
+
+.clock{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px;
+    height: 24vh;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.clock span{
+    position: relative;
+    top: -13%;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@media screen and (max-width:400px){
+    .clock{
+        max-width: 210px;
+        padding: 5px;
+    }
+    .clock h1{
+        font-size: 1.9rem;
+    } 
+}
+
+@media screen and (min-width:275px) and (max-width:400px){
+    .clock{
+        max-width: 260px;
+        padding: 5px;
+    }
+    .clock h1{
+        font-size: 2.4rem;
+    }
+}
